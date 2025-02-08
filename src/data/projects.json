@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Modern Portfolio Showcase",
+    "src": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg",
+    "description": "A sleek and minimalist portfolio website highlighting creative projects.",
+    "info": {
+      "description": "This project features a responsive design with smooth animations and a clean layout to showcase various creative works effectively.",
+      "tags": [
+        { "category": "Responsive Design" },
+        { "category": "Minimalist" },
+        { "category": "Portfolio" }
+      ]
+    }
+  },
+  {
+    "name": "E-Commerce Platform",
+    "src": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+    "description": "A comprehensive e-commerce website with user-friendly navigation and secure payment integration.",
+    "info": {
+      "description": "Developed an online store featuring product listings, shopping cart functionality, and a streamlined checkout process.",
+      "tags": [
+        { "category": "E-Commerce" },
+        { "category": "User Experience" },
+        { "category": "Payment Integration" }
+      ]
+    }
+  },
+  {
+    "name": "Blog for Tech Enthusiasts",
+    "src": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+    "description": "A dynamic blog platform tailored for technology news and updates.",
+    "info": {
+      "description": "Implemented a content management system allowing for easy post creation, categorization, and reader engagement through comments.",
+      "tags": [
+        { "category": "Blog" },
+        { "category": "Content Management" },
+        { "category": "Tech News" }
+      ]
+    }
+  },
+  {
+    "name": "Non-Profit Organization Site",
+    "src": "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg",
+    "description": "An informative website designed to raise awareness and support for a non-profit cause.",
+    "info": {
+      "description": "Created a platform to showcase the organization's mission, upcoming events, and donation opportunities.",
+      "tags": [
+        { "category": "Non-Profit" },
+        { "category": "Awareness" },
+        { "category": "Donations" }
+      ]
+    }
+  },
+  {
+    "name": "Online Learning Portal",
+    "src": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
+    "description": "A user-centric platform offering a variety of online courses and learning resources.",
+    "info": {
+      "description": "Developed features including course listings, user profiles, and progress tracking to enhance the learning experience.",
+      "tags": [
+        { "category": "Education" },
+        { "category": "E-Learning" },
+        { "category": "User Profiles" }
+      ]
+    }
+  },
+  {
+    "name": "Restaurant Website",
+    "src": "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg",
+    "description": "A visually appealing website showcasing a restaurant's menu, ambiance, and reservation system.",
+    "info": {
+      "description": "Integrated high-quality images, an interactive menu, and an online booking system to attract and engage customers.",
+      "tags": [
+        { "category": "Food & Beverage" },
+        { "category": "Reservations" },
+        { "category": "Interactive Menu" }
+      ]
+    }
+  },
+  {
+    "name": "Fitness App Landing Page",
+    "src": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+    "description": "A promotional landing page for a fitness tracking mobile application.",
+    "info": {
+      "description": "Designed to highlight app features, user testimonials, and download links to drive user acquisition.",
+      "tags": [
+        { "category": "Fitness" },
+        { "category": "App Promotion" },
+        { "category": "Landing Page" }
+      ]
+    }
+  },
+  {
+    "name": "Travel Agency Portal",
+    "src": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+    "description": "An engaging website offering travel packages, destination guides, and booking options.",
+    "info": {
+      "description": "Implemented search functionality, detailed itineraries, and customer reviews to assist users in planning their trips.",
+      "tags": [
+        { "category": "Travel" },
+        { "category": "Booking System" },
+        { "category": "Destination Guides" }
+      ]
+    }
+  },
+  {
+    "name": "Photography Portfolio",
+    "src": "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg",
+    "description": "A visually driven website to display a photographer's work in high resolution.",
+    "info": {
+      "description": "Focused on creating a gallery layout with lightbox features to enhance the viewing experience.",
+      "tags": [
+        { "category": "Photography" },
+        { "category": "Gallery" },
+        { "category": "High Resolution" }
+      ]
+    }
+  }
+]
