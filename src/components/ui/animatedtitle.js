@@ -36,48 +36,37 @@ const AnimatedTitle = () => {
         return () => clearInterval(interval);
     }, [currentWord]);
 
-    const getXOffset = () => {
-        const currentWordLength = words[currentWord].length;
-        const diffInChars = largestWordLength.current - currentWordLength;
-        // Convert character difference to pixels (assuming average char width)
-        // You might need to adjust the multiplier based on your font
-        return diffInChars * -0.2 + 'rem';
-    };
-
     return (
         <div className="text-white w-full flex items-center justify-center min-h-[300px] py-8 sm:py-16">
-            <div className="max-w-full mx-auto px-4 flex justify-center items-center flex-col">
-                <div className="text-5xl sm:text-6xl lg:text-[5rem] font-bold flex flex-col text-center leading-none">
-                    <div className="flex items-center flex-col">
-                        <div className="relative w-full flex">
-                            <span className="block">Let Your</span>
-                            <div
-                                className="transform"
-                                style={{ width: `${largestWordLength.current}ch` }}
-                            >
-                                <AnimatePresence mode="wait">
-                                    <motion.span
-                                        key={words[currentWord]}
-                                        initial={{ y: 40, opacity: 0,       x: getXOffset() }}
-                                        animate={{
-                                            y: 0,
-                                            opacity: 1,
+            <div className="w-full max-w-4xl mx-auto px-4">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold flex flex-col items-center gap-8">
+                    {/* First line with animated word */}
+                    <div className="flex flex-wrap justify-center items-center">
+                        <span>Let Your</span>
+                        <div className="relative inline-flex ml-4" style={{ width: `${largestWordLength.current}ch` }}>
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={words[currentWord]}
+                                    initial={{ y: 40, opacity: 0 }}
+                                    animate={{
+                                        y: -30,
+                                        opacity: 1,
+                                    }}
+                                    exit={{ y: -40, opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="absolute left-0 whitespace-nowrap"
+                                >
+                                    {words[currentWord]}
+                                </motion.span>
+                            </AnimatePresence>
+                        </div>
+                    </div>
 
-                                        }}
-                                        exit={{ y: -40, opacity: 0 }}
-                                        transition={{ duration: 0.5 }}
-                                        className="block whitespace-nowrap"
-                                    >
-                                        {words[currentWord]}
-                                    </motion.span>
-                                </AnimatePresence>
-                            </div>
-                        </div>
-                        <div className="mt-16 flex space-x-3">
-                            <span>build</span>
-                            <b className="underline">your</b>
-                            <span>Future</span>
-                        </div>
+                    {/* Second line */}
+                    <div className="flex items-center gap-x-3">
+                        <span>build</span>
+                        <span className="underline">your</span>
+                        <span>Future</span>
                     </div>
                 </div>
             </div>
