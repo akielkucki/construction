@@ -88,21 +88,18 @@ const ProjectDetails = ({ project, onClose }) => {
                     </div>
 
                     <div className="flex flex-wrap gap-2 mt-4">
-                        <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">
-                            Web Design
+                        {project.tags.split(',').map((tag, index) => (
+                            <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
+                            {tag}
                         </span>
-                        <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">
-                            Branding
-                        </span>
-                        <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">
-                            UI/UX
-                        </span>
+                        ))}
+
                     </div>
                 </div>
             </div>
 
             <AnimatePresence>
-                {selectedImage && (
+            {selectedImage && (
                     <>
                         <motion.div
                             initial={{ opacity: 0 }}
