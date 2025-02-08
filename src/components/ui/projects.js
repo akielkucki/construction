@@ -149,7 +149,7 @@ export default function Projects() {
     useEffect(() => {
         async function fetchProjects() {
             try {
-                const res = await fetch("http://5.161.42.119:8080/api/images", {
+                const res = await fetch("https://5.161.42.119:8080/api/images", {
                     method: "GET",
                     headers: { Accept: "application/json" },
                 });
