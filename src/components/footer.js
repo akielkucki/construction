@@ -23,15 +23,15 @@ const Footer = () => {
                         <div className="space-y-3">
                             <div className="flex items-center">
                                 <Phone className="w-5 h-5 mr-3 text-yellow-400" />
-                                <span>(215) 555-0123</span>
+                                <span>(215) 534-1008</span>
                             </div>
                             <div className="flex items-center">
                                 <Mail className="w-5 h-5 mr-3 text-yellow-400" />
-                                <span>info@redbridgeconstruction.com</span>
+                                <span>redbridgeconstructionllc@gmail.com</span>
                             </div>
                             <div className="flex items-center">
                                 <MapPin className="w-5 h-5 mr-3 text-yellow-400" />
-                                <span>123 Main Street, Doylestown, PA 18901</span>
+                                <span>225 Red Bridge Rd, Kintnersville, PA 18930</span>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                             <li>Monday - Friday</li>
                             <li className="text-yellow-400">7:00 AM - 5:00 PM</li>
                             <li>Saturday</li>
-                            <li className="text-yellow-400">8:00 AM - 2:00 PM</li>
+                            <li className="text-yellow-400">Closed</li>
                             <li>Sunday</li>
                             <li className="text-yellow-400">Closed</li>
                         </ul>
