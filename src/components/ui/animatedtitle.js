@@ -34,27 +34,28 @@ const AnimatedTitle = () => {
         }, 4000);
 
         return () => clearInterval(interval);
-    }, [currentWord]);
+    }, []);
 
     return (
-        <div className="text-white w-full flex items-center justify-center min-h-[300px] py-8 sm:py-16">
-            <div className="w-full max-w-4xl mx-auto px-4">
-                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold flex flex-col items-center gap-8">
-                    {/* First line with animated word */}
-                    <div className="flex flex-wrap justify-center items-center">
+        <div className="text-white w-full flex items-center justify-center h-[20em] md:h-[30em] lg:h-[30em]">
+            <div className="w-full max-w-md sm:max-w-xl md:max-w-3xl mx-auto px-4">
+                <div className="text-4xl sm:text-5xl lg:text-7xl font-bold flex flex-col items-center text-center gap-4 md:gap-8 lg:gap-16">
+                    {/* First line rendered as a flex row */}
+                    <div className="flex flex-row items-center whitespace-nowrap mr-8">
                         <span>Let Your</span>
-                        <div className="relative inline-flex ml-4" style={{ width: `${largestWordLength.current}ch` }}>
+                        {/* The container maintains a fixed width based on the longest word */}
+                        <div
+                            className="ml-4 inline-block "
+                            style={{ width: `${largestWordLength.current-5}ch` }}
+                        >
                             <AnimatePresence mode="wait">
                                 <motion.span
                                     key={words[currentWord]}
-                                    initial={{ y: 40, opacity: 0 }}
-                                    animate={{
-                                        y: -30,
-                                        opacity: 1,
-                                    }}
-                                    exit={{ y: -40, opacity: 0 }}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -20 }}
                                     transition={{ duration: 0.5 }}
-                                    className="absolute left-0 whitespace-nowrap"
+                                    className="inline-block"
                                 >
                                     {words[currentWord]}
                                 </motion.span>
@@ -62,8 +63,8 @@ const AnimatedTitle = () => {
                         </div>
                     </div>
 
-                    {/* Second line */}
-                    <div className="flex items-center gap-x-3">
+                    {/* Second line remains unchanged */}
+                    <div className="flex items-center gap-x-3 whitespace-nowrap">
                         <span>build</span>
                         <span className="underline">your</span>
                         <span>Future</span>
