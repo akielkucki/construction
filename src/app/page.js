@@ -375,7 +375,7 @@ export default function Home() {
                                 delay={0.7}
                                 bgclass="bg-yellow-400"
                                 textColor="text-white"
-                                targetSection="services"
+                                targetSection="about"
                             >
                                 Get Started
                             </ActionButton>
@@ -384,6 +384,7 @@ export default function Home() {
                                 bgclass="bg-white"
                                 textColor="text-white"
                                 targetSection="projects"
+
                             >
                                 Our Projects
                             </ActionButton>
