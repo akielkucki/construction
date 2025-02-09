@@ -32,11 +32,7 @@ const testimonialData = [
 const TestimonialCard = ({ testimonial }) => (
     <div className="min-w-[350px] bg-white rounded-lg shadow-lg p-6 mx-4 flex flex-col">
         <div className="flex items-center mb-4">
-            <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full object-cover"
-            />
+ 
             <div className="ml-4">
                 <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
                 <p className="text-sm text-gray-600">{testimonial.role}</p>
