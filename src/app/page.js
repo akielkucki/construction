@@ -397,7 +397,6 @@ export default function Home() {
                     <TeamSection/>
                     <Projects/>
                     <AboutSection/>
-                    <Testimonials/>
                     <GeometricSection/>
                     <Footer/>
                 </div>
